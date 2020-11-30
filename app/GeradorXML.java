@@ -9,6 +9,7 @@ public class GeradorXML extends GeradorArquivo {
         StringBuilder propFileBuilder = new StringBuilder();
 
         propFileBuilder.append("<properties>");
+        
         for (String prop : propriedades.keySet()){
             String s = "<" + prop +  ">" + propriedades.get(prop) + "</" + prop + ">";
 			propFileBuilder.append(s);
